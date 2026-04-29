@@ -1,0 +1,26 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body, #app {
+  height: 100%;
+  font-family: 'Helvetica Neue', Helvetica, 'PingFang SC', 'Hiragino Sans GB',
+    'Microsoft YaHei', Arial, sans-serif;
+}
+
+/* 侧边栏过渡动画修复 - 消除白色边框闪烁 */
+.el-aside {
+  transition: width 0.28s cubic-bezier(0.4, 0, 0.2, 1) !important;
+  overflow: hidden !important;
+}
+
+.el-aside .el-menu {
+  transition: width 0.28s cubic-bezier(0.4, 0, 0.2, 1) !important;
+  border-right: none !important;
+}
+
+.el-container {
+  transition: none;
+}

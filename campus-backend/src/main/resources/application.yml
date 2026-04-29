@@ -1,0 +1,28 @@
+server:
+  port: 8080
+
+spring:
+  profiles:
+    active: dev
+  servlet:
+    multipart:
+      max-file-size: 10MB
+      max-request-size: 10MB
+
+mybatis-plus:
+  mapper-locations: classpath:mapper/*.xml
+  type-aliases-package: com.campus.entity
+  configuration:
+    map-underscore-to-camel-case: true
+
+jwt:
+  secret: campus-smart-platform-secret-key-2024
+  expiration: 86400000
+
+file:
+  upload-path: ./uploads
+  max-size: 10485760
+
+logging:
+  level:
+    com.campus: info

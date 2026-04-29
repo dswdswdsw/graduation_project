@@ -1,0 +1,58 @@
+# ========================
+# Backend (Java/Maven)
+# ========================
+campus-backend/target/
+campus-backend/*.class
+campus-backend/*.jar
+campus-backend/*.war
+campus-backend/*.log
+campus-backend/.mvn/
+campus-backend/mvnw
+campus-backend/mvnw.cmd
+
+# ========================
+# Frontend (Vue/Node)
+# ========================
+campus-frontend/node_modules/
+campus-frontend/dist/
+campus-frontend/*.local
+campus-frontend/npm-debug.log*
+campus-frontend/yarn-debug.log*
+campus-frontend/yarn-error.log*
+campus-frontend/pnpm-debug.log*
+
+# ========================
+# IDE
+# ========================
+.idea/
+*.iml
+*.iws
+*.ipr
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+
+# ========================
+# OS
+# ========================
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# ========================
+# Logs
+# ========================
+*.log
+logs/
+
+# ========================
+# Upload files
+# ========================
+campus-backend/upload/
+
+# ========================
+# Batch scripts (local)
+# ========================
+start-project.bat
+stop-project.bat
+start-redis.bat
